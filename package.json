@@ -5,12 +5,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsx src/index.ts",
+    "start:dev": "tsx --watch src/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
@@ -19,9 +21,11 @@
     "express-validator": "^7.2.1",
     "pg": "^8.13.1",
     "reflect-metadata": "^0.2.2",
-    "typeorm": "^0.3.20"
+    "typeorm": "^0.3.20",
+    "typescript-express": "file:"
   },
   "devDependencies": {
+    "tsx": "^4.19.2",
     "typescript": "^5.7.2"
   }
 }
